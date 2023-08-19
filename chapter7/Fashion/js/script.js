@@ -1,5 +1,3 @@
-
-
 const loadingAreaGrey = document.querySelector('#loading');
 const loadingAreaGreen = document.querySelector('#loading-screen');
 const loadingText = document.querySelector('#loading p')
@@ -48,4 +46,15 @@ window.addEventListener('load', () => {
     }
   );
 });
+
+
+const mainImage = document.querySelector('.gallery-image img');
+const thumbImages = document.querySelectorAll('.gallery-thumbnails img');
+
+for(let i = 0; i < thumbImages.length; i++) {
+  thumbImages[i].addEventListener('mouseover', () => {
+    mainImage.animate({opacity: [0, 1]}, 500);
+    console.log(thumbImages[i]);
+  });
+}
 
