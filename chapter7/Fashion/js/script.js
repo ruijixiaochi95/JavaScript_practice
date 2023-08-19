@@ -2,6 +2,7 @@
 
 const loadingAreaGrey = document.querySelector('#loading');
 const loadingAreaGreen = document.querySelector('#loading-screen');
+const loadingText = document.querySelector('#loading p')
 
 window.addEventListener('load', () => {
   loadingAreaGrey.animate(
@@ -28,4 +29,23 @@ window.addEventListener('load', () => {
       fill: 'forwards',
     }
   );
+  loadingText.animate(
+    [
+      {
+        opacity: 1,
+        offset: .8
+      },
+      {
+        opacity: 0,
+        offset: 1
+      }
+    ],
+    
+    {
+      duration: 1200,
+      easing: 'ease',
+      fill: 'forwards',
+    }
+  );
 });
+

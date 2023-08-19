@@ -76,6 +76,11 @@ LOADING
     translate: 0 100vh;
 }
 
+#loading p {
+    font-size: 2rem;
+    font-family: var(--oswald-font);
+}
+
 /*
 HERO
 ================================================ */
